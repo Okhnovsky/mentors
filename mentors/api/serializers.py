@@ -5,6 +5,7 @@ from users.models import CustomUser
 
 
 class UserRegistrationSerializer(UserCreateSerializer):
+
     class Meta(UserCreateSerializer.Meta):
         fields = ('username', 'password', 'email', 'phone_number')
 

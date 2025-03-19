@@ -5,7 +5,7 @@ from django.contrib.auth.models import AbstractUser
 class CustomUser(AbstractUser):
     """
     Кастомная модель пользователя, включающая в себя поле
-    с номером телефона.
+    с номером телефона и поле с ментором.
     """
 
     phone_number = models.CharField(
